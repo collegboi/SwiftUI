@@ -12,20 +12,17 @@ struct LandmarkList : View {
     @EnvironmentObject private var userData: UserData
     
     var body: some View {
-        NavigationView {
-            List {
-                Toggle(isOn: $userData.showFavoritesOnly) {
-                    Text("Favorites only")
-                }
-                ForEach(userData.landMarks) { landmark in
-                    if !self.userData.showFavoritesOnly || landmark.isFavorite {
-                        NavigationButton(destination: LandmarkDetail(landmark: landmark)) {
-                            LandmarkRow(landMark: landmark)
-                        }
+        List {
+            Toggle(isOn: $userData.showFavoritesOnly) {
+                Text("Favorites only")
+            }
+            ForEach(userData.landMarks) { landmark in
+                if !self.userData.showFavoritesOnly || landmark.isFavorite {
+                    NavigationButton(destination: LandmarkDetail(landmark: landmark)) {
+                        LandmarkRow(landMark: landmark)
                     }
                 }
             }
-            .navigationBarTitle(Text("Landmarks"), displayMode: .large)
         }
     }
 }

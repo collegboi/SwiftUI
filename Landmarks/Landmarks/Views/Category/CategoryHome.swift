@@ -33,6 +33,9 @@ struct CategoryHome : View {
                 NavigationButton(destination: LandmarkList()) {
                     Text(verbatim: "See All")
                 }
+                NavigationButton(destination: PageView(features.map { FeatureCard(landmark: $0) })) {
+                    Text(verbatim: "Featured Photos")
+                }
             }
             .navigationBarTitle(Text("Featured"))
             .navigationBarItems(trailing: PresentationButton(

@@ -219,19 +219,12 @@
 		156A3E4522A666AE0090F388 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				15D4FE0E22A70E1600FF336E /* Extras */,
+				15D4FE0D22A70DFF00FF336E /* Hike */,
+				15D4FE0C22A70DEE00FF336E /* Landmark */,
+				15D4FE0B22A70DBE00FF336E /* Category */,
 				15D4FDFA22A7046C00FF336E /* Pages */,
 				15D4FDF322A6F8E000FF336E /* Profile */,
-				1557700D22A65A2B00187D59 /* DetailView.swift */,
-				1587CC0A22A65F6100D66876 /* CircleImage.swift */,
-				1587CC0C22A6632B00D66876 /* MapView.swift */,
-				1565234622A670EA00931B82 /* LandmarkRow.swift */,
-				1565234822A674E900931B82 /* LandmarkList.swift */,
-				15D4FDE322A6E22500FF336E /* HikeView.swift */,
-				15D4FDE522A6E31E00FF336E /* HikeDetail.swift */,
-				15D4FDE722A6EFD200FF336E /* CategoryHome.swift */,
-				15D4FDE922A6F0FD00FF336E /* CategoryRow.swift */,
-				15D4FDEB22A6F26600FF336E /* CategoryItem.swift */,
-				15D4FDED22A6F31700FF336E /* FeaturedLandmarks.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,6 +271,45 @@
 				15D4FE0922A70B7D00FF336E /* PageControl.swift */,
 			);
 			path = Pages;
+			sourceTree = "<group>";
+		};
+		15D4FE0B22A70DBE00FF336E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				15D4FDE722A6EFD200FF336E /* CategoryHome.swift */,
+				15D4FDE922A6F0FD00FF336E /* CategoryRow.swift */,
+				15D4FDEB22A6F26600FF336E /* CategoryItem.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		15D4FE0C22A70DEE00FF336E /* Landmark */ = {
+			isa = PBXGroup;
+			children = (
+				15D4FDED22A6F31700FF336E /* FeaturedLandmarks.swift */,
+				1557700D22A65A2B00187D59 /* DetailView.swift */,
+				1565234622A670EA00931B82 /* LandmarkRow.swift */,
+				1565234822A674E900931B82 /* LandmarkList.swift */,
+			);
+			path = Landmark;
+			sourceTree = "<group>";
+		};
+		15D4FE0D22A70DFF00FF336E /* Hike */ = {
+			isa = PBXGroup;
+			children = (
+				15D4FDE322A6E22500FF336E /* HikeView.swift */,
+				15D4FDE522A6E31E00FF336E /* HikeDetail.swift */,
+			);
+			path = Hike;
+			sourceTree = "<group>";
+		};
+		15D4FE0E22A70E1600FF336E /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				1587CC0A22A65F6100D66876 /* CircleImage.swift */,
+				1587CC0C22A6632B00D66876 /* MapView.swift */,
+			);
+			path = Extras;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
