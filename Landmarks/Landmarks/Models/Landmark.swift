@@ -31,6 +31,16 @@ struct Landmark: Hashable, Codable, Identifiable {
         )
     }
     
+    var featureImage: Image? {
+        guard isFeatured else { return nil }
+        
+        return Image(
+            ImageStore.loadImage(name: "\(imageName)_feature"),
+            scale: 2,
+            label: Text(verbatim: name))
+    }
+
+    
     func image(forsize: Int) -> Image {
         ImageStore.share.image(name: imageName, size: forsize)
     }
